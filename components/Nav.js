@@ -9,7 +9,7 @@ import {
 } from 'react-icons/hi2';
 
 import Link from 'next/link';  //next link
-import { useRouter } from 'next/router';   //next router
+import { useRouter } from 'next/router';   //next router 
 
 // nav data
 export const navData = [
@@ -35,7 +35,7 @@ const Nav = () => {
        text-3xl xl:text-xl xl:rounded-full'>
 
         {navData.map((link, index) => {
-          return <Link className={`${link.path === pathName && 'text-accent transition-all duration-300'}  
+          return <Link className={`${link.path === pathName && 'text-accent transition-all duration-300'} 
           relative flex items-center group hover:text-accent`} href={link.path} key={index}>
 
             {/* group is adding to perform a hover effect in tailwind css */}
