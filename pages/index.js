@@ -36,7 +36,7 @@ const Home = () => {
 
           {/* button */}
 
-          <div className="flex justify-center">
+          <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
         </div>
