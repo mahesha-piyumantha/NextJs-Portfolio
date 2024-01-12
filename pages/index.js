@@ -83,7 +83,7 @@ const Home = () => {
 
         {/* particles */}
 
-        <ParticlesContainer/>
+        {/* <ParticlesContainer/> */}
 
         {/* avatar image */}
 
