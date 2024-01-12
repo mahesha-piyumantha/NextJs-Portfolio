@@ -5,14 +5,26 @@ import React, {useCallback} from 'react';
 const ParticlesContainer = () => {
 
   //init 
-  const init = useCallback(async (engine) => {
+  const particesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
  
 
-  return (
-    <div>Particles Container</div>
+  const particlesLoaded  = useCallback(async () => {} , []);
+
+  return(
+    <Particles id='tsparticles' init={particesInit} loaded={particlesLoaded} options={
+      {
+        
+      }
+    }>
+
+    </Particles>
   )
+  
+
+  
+
 };
 
 export default ParticlesContainer;
